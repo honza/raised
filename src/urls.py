@@ -5,9 +5,9 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'raised.views.home', name='home'),
-    url(r'^auth', 'raised.views.auth', name='auth'),
-    url(r'^callback', 'raised.views.callback', name='callback'),
-    url(r'^logout$', 'raised.views.logout', name='logout'),
+    url(r'^$', 'src.views.home', name='home'),
+    url(r'^auth', 'src.views.auth', name='auth'),
+    url(r'^callback', 'src.views.callback', name='callback'),
+    url(r'^logout$', 'src.views.logout', name='logout'),
     url(r'^admin/', include(admin.site.urls)),
 )

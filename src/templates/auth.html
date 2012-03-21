@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Please sign in with Dropbox.</p>
+    <p>
+        <form action="/auth" method="get">
+            <input type="submit" class="btn" value="Sign in" />
+        </form>
+    </p>
+{% endblock %}

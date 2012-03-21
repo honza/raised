@@ -148,7 +148,7 @@ DROPBOX_KEY = os.environ['DROPBOX_KEY']
 DROPBOX_SECRET = os.environ['DROPBOX_SECRET']
 
 DROPBOX_ACCESS_TYPE = 'app_folder'
-DROPBOX_CALLBACK = 'http://raised-test.herokuapp/callback'
+DROPBOX_CALLBACK = 'http://raised-test.herokuapp.com/callback'
 
 
 CACHES = {

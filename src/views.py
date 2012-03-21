@@ -63,7 +63,9 @@ def get_urls_from_contents(dropbox_client, contents):
 def home(request):
     uid = request.session.get('uid')
     if not uid:
-        return render_to_response('auth.html', {})
+        return render_to_response('auth.html', {
+            'logged_in': False
+        })
     else:
         access_token = get_access_token_for_uid(uid)
         c = get_client(access_token)
@@ -72,6 +74,7 @@ def home(request):
         urls = get_urls_from_contents(c, contents)
 
         return render_to_response('main.html', {
+            'logged_in': True,
             'user': c.account_info(),
             'contents': urls
         })

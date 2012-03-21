@@ -11,7 +11,7 @@ Test photos
 -----------
 
 Test photos contained in the `kittens/` directory are provided by
-[placekitten.com][http://placekitten.com/].  Used with permission.
+[placekitten.com](http://placekitten.com/).  Used with permission.
 
 
 License

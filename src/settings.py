@@ -165,9 +165,9 @@ CACHES = {
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 
-if os.environ.has_key('REDIS_TO_GO'):
+if os.environ.has_key('REDISTOGO_URL'):
     urlparse.uses_netloc.append('redis')
-    url = urlparse.urlparse(os.environ['REDIS_TO_GO'])
+    url = urlparse.urlparse(os.environ['REDISTOGO_URL'])
 
     CACHES = {
         'default': {

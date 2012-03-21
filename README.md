@@ -7,6 +7,13 @@ and shows images from the application's Dropbox folder.
 It includes settings for deployment to Heroku.  It uses Redis to go as the
 persistence layer.
 
+Test photos
+-----------
+
+Test photos contained in the `kittens/` directory are provided by
+[placekitten.com][http://placekitten.com/].  Used with permission.
+
+
 License
 -------
 
